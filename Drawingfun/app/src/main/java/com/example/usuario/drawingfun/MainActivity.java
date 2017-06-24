@@ -83,6 +83,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 public void onClick(View v) {
                     drawView.setBrushSize(smallBrush);
                     drawView.setLastBrushSize(smallBrush);
+                    drawView.setErase(false);
                     brushDialog.dismiss();
                 }
             });
@@ -93,6 +94,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 public void onClick(View v) {
                     drawView.setBrushSize(mediumBrush);
                     drawView.setLastBrushSize(mediumBrush);
+                    drawView.setErase(false);
                     brushDialog.dismiss();
                 }
             });
@@ -103,6 +105,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 public void onClick(View v) {
                     drawView.setBrushSize(largeBrush);
                     drawView.setLastBrushSize(largeBrush);
+                    drawView.setErase(false);
                     brushDialog.dismiss();
                 }
             });
@@ -121,7 +124,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 public void onClick(View v) {
                     drawView.setErase(true);
                     drawView.setBrushSize(smallBrush);
-                    drawView.setErase(false);
+                    
                     brushDialog.dismiss();
                 }
             });
@@ -131,7 +134,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 public void onClick(View v) {
                     drawView.setErase(true);
                     drawView.setBrushSize(mediumBrush);
-                    drawView.setErase(false);
+                   
                     brushDialog.dismiss();
                 }
             });
@@ -141,7 +144,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 public void onClick(View v) {
                     drawView.setErase(true);
                     drawView.setBrushSize(largeBrush);
-                    drawView.setErase(false);
+                    
                     brushDialog.dismiss();
                 }
             });
